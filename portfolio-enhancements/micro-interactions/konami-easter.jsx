@@ -1,0 +1,1 @@
+// Konami code Easter egg

@@ -1,0 +1,1 @@
+// Next.js image optimization example

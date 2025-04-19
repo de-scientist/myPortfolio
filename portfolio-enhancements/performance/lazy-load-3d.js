@@ -1,0 +1,1 @@
+// Dynamic import for 3D model

@@ -1,0 +1,1 @@
+<a href="/assets/De-Scientist_Resume.pdf" download>Download Resume</a>
