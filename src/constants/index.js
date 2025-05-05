@@ -35,8 +35,24 @@ import {
       title: "Work",
     },
     {
+      id: "services",
+      title: "Services",
+    },
+    {
+      id: "tech",
+      title: "Technologies",
+    },
+    {
+      id: "team",
+      title: "Team",
+    },
+    {
       id: "contact",
       title: "Contact",
+    },
+    {
+      id: "footer",
+      title: "Footer",
     },
   ];
   
@@ -116,55 +132,55 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Lenny Technologies",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "January 2025 - April 2025",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Frontend Developer",
-      company_name: "Tech",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2024 - Feb 2025",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Umris",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "May 2022 - Dec 2024",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
+      title: "Enterprise Solutions Division",
       company_name: "TechVision S&S",
       icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      iconBg: "#383E56",
+      date: "2021 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Leading development of scalable enterprise solutions using React.js, Node.js, and cloud technologies",
+        "Successfully delivered custom ERP systems resulting in 35% improvement in client operational efficiency",
+        "Implemented microservices architecture for improved system scalability and maintenance",
+        "Managed team of 12 developers across multiple high-value projects",
+      ],
+    },
+    {
+      title: "Web Applications Division",
+      company_name: "TechVision S&S",
+      icon: tesla,
+      iconBg: "#E6DEDD",
+      date: "2020 - Present",
+      points: [
+        "Specialized in developing responsive, high-performance web applications using modern frameworks",
+        "Delivered 20+ successful client projects with 98% satisfaction rate",
+        "Pioneered implementation of PWA technology improving mobile user engagement by 45%",
+        "Established best practices for code quality and performance optimization",
+      ],
+    },
+    {
+      title: "Innovation Lab",
+      company_name: "TechVision S&S",
+      icon: shopify,
+      iconBg: "#383E56",
+      date: "2019 - Present",
+      points: [
+        "Research and development of cutting-edge web technologies and frameworks",
+        "Created proprietary component library reducing development time by 40%",
+        "Developed AI-powered solutions for business process automation",
+        "Led workshops and training sessions for emerging technologies",
+      ],
+    },
+    {
+      title: "Client Success Division",
+      company_name: "TechVision S&S",
+      icon: starbucks,
+      iconBg: "#E6DEDD",
+      date: "2018 - Present",
+      points: [
+        "Managed end-to-end client relationships and project delivery",
+        "Achieved 95% client retention rate through excellent service delivery",
+        "Implemented agile methodologies improving project delivery times by 30%",
+        "Established comprehensive testing and quality assurance protocols",
       ],
     },
   ];
@@ -172,93 +188,93 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "TechVision S&S delivered an exceptional e-commerce platform that exceeded our expectations. Their innovative solutions and attention to detail resulted in a 40% increase in our online sales.",
+      name: "Michael Chen",
+      designation: "CEO",
+      company: "GlobalTech Solutions",
+      image: "https://randomuser.me/api/portraits/men/1.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "The team at TechVision S&S transformed our legacy system into a modern, scalable application. Their expertise in React and Node.js was evident throughout the project.",
+      name: "Sarah Martinez",
       designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      company: "InnovateX",
+      image: "https://randomuser.me/api/portraits/women/2.jpg",
+    },
+    {
+      testimonial:
+        "Working with TechVision S&S was a game-changer for our startup. Their Three.js implementations brought our product visualization to life, leading to a 60% improvement in user engagement.",
+      name: "James Wilson",
+      designation: "Product Director",
+      company: "TechStart Inc",
+      image: "https://randomuser.me/api/portraits/men/3.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Enterprise Resource Hub",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Cloud-based enterprise resource planning system with real-time analytics, automated workflow management, and integrated business intelligence tools that improved client efficiency by 35%.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "nodejs",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "mongodb",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://techvision.com/erp",
     },
     {
-      name: "Job IT",
+      name: "Smart Analytics Platform",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "AI-powered analytics platform that processes big data to provide actionable business insights, featuring machine learning algorithms and predictive modeling capabilities.",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "tensorflow",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "aws",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://techvision.com/analytics",
     },
     {
-      name: "Trip Guide",
+      name: "Digital Transformation Suite",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Comprehensive digital transformation platform that integrates legacy systems with modern cloud infrastructure, enabling seamless business process automation and digital workflow management.",
       tags: [
         {
-          name: "nextjs",
+          name: "microservices",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "kubernetes",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "docker",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://techvision.com/transform",
     },
   ];
   

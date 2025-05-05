@@ -42,10 +42,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='object-contain w-9 h-9' />
+          <img src={logo} alt='logo' className='object-contain w-24 h-24' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            deScientist &nbsp;
-            <span className='hidden sm:block'> | Mark Kinyanjui</span>
+            &nbsp;
+            <span className='hidden sm:block'> | TechVision S&S</span>
           </p>
         </Link>
 
@@ -58,40 +58,91 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`} onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById(nav.id);
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                  setActive(nav.title);
+                }
+              }}>{nav.title}</a>
             </li>
           ))}
         </ul>
 
         <div className='flex flex-1 justify-end items-center sm:hidden'>
-          <img
-            src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+          <button
+            className='p-2 rounded-md transition-colors hover:bg-white/10'
             onClick={() => setToggle(!toggle)}
-          />
+            aria-expanded={toggle}
+            aria-label='Toggle menu'
+          >
+            <img
+              src={toggle ? close : menu}
+              alt='menu'
+              className='w-[28px] h-[28px] object-contain'
+            />
+          </button>
 
+          {/* Mobile Menu Backdrop */}
+          {toggle && (
+            <div
+              className="fixed inset-0 z-10 backdrop-blur-sm bg-black/50"
+              onClick={() => setToggle(false)}
+              aria-hidden="true"
+            />
+          )}
+          
+          {/* Mobile Menu */}
           <div
             className={`${
-              !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+              !toggle ? "translate-x-full" : "translate-x-0"
+            } fixed top-0 right-0 p-6 w-[min(75vw,300px)] h-screen transition-all duration-300 ease-in-out bg-primary/95 backdrop-blur-md shadow-xl z-20`}
           >
-            <ul className='flex flex-col flex-1 gap-4 justify-end items-start list-none'>
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
+            <div className="flex flex-col h-full">
+              <div className="flex justify-end mb-8">
+                <button
+                  className="p-2 rounded-md transition-colors hover:bg-white/10"
+                  onClick={() => setToggle(false)}
+                  aria-label="Close menu"
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
-              ))}
-            </ul>
+                  <img
+                    src={close}
+                    alt="close menu"
+                    className="w-[20px] h-[20px] object-contain"
+                  />
+                </button>
+              </div>
+              
+              <ul className='flex flex-col gap-6 items-start list-none'>
+                {navLinks.map((nav) => (
+                  <li
+                    key={nav.id}
+                    className="w-full"
+                  >
+                    <a 
+                      href={`#${nav.id}`}
+                      className={`block px-4 py-3 w-full rounded-lg transition-all ${
+                        active === nav.title 
+                          ? "text-white bg-white/10" 
+                          : "text-secondary hover:text-white hover:bg-white/5"
+                      }`}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const element = document.getElementById(nav.id);
+                        if (element) {
+                          element.scrollIntoView({ behavior: 'smooth' });
+                          setActive(nav.title);
+                          setToggle(false);
+                        }
+                      }}
+                    >
+                      {nav.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

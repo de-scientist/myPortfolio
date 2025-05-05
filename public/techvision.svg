@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="laptopGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066cc"/>
+      <stop offset="100%" style="stop-color:#003366"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(50, 50)">
+    <!-- Laptop Base -->
+    <path d="M50 200 L250 200 L300 250 L0 250 Z" fill="url(#laptopGradient)"/>
+    <!-- Laptop Screen -->
+    <path d="M75 50 L225 50 L250 200 L50 200 Z" fill="url(#laptopGradient)"/>
+    <!-- Screen Elements -->
+    <circle cx="150" cy="100" r="15" fill="#fff" opacity="0.8"/>
+    <path d="M135 120 Q150 140 165 120" stroke="#fff" fill="none" stroke-width="3"/>
+    <path d="M120 80 L180 80" stroke="#fff" stroke-width="2" opacity="0.5"/>
+    <!-- WiFi Symbol -->
+    <path d="M140 140 Q150 130 160 140 M135 150 Q150 135 165 150 M130 160 Q150 140 170 160" stroke="#00ffff" fill="none" stroke-width="2"/>
+    <!-- Gear Icon -->
+    <g transform="translate(170, 90)">
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#fff" stroke-width="2"/>
+      <path d="M0 -12 L0 -4 M8.5 -8.5 L4 -4 M12 0 L4 0 M8.5 8.5 L4 4 M0 12 L0 4 M-8.5 8.5 L-4 4 M-12 0 L-4 0 M-8.5 -8.5 L-4 -4" stroke="#fff" stroke-width="2"/>
+    </g>
+  </g>
+  <!-- Text -->
+  <text x="200" y="320" text-anchor="middle" fill="#0066cc" font-family="Arial" font-weight="bold" font-size="40">TECHVISION</text>
+  <text x="200" y="360" text-anchor="middle" fill="#003366" font-family="Arial" font-weight="bold" font-size="30">S & S</text>
+  <!-- Tagline -->
+  <text x="200" y="390" text-anchor="middle" fill="#666666" font-family="Arial" font-size="14">We Innovate, Create, and Educate.</text>
+</svg>

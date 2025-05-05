@@ -33,6 +33,23 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'react/no-unknown-property': ['error', {
+        ignore: [
+          'position',
+          'rotation',
+          'intensity',
+          'groundColor',
+          'args',
+          'attach',
+          'transparent',
+          'castShadow',
+          'receiveShadow',
+          'uniforms-time-value',
+          'angle',
+          'penumbra',
+          'shadow-mapSize'
+        ]
+      }],
     },
   },
 ]

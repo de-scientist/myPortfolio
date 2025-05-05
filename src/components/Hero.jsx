@@ -10,17 +10,17 @@ const Hero = () => {
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-5 h-5 rounded-full bg-[#0066cc]' />
           <div className='w-1 h-40 sm:h-80 violet-gradient' />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I&apos;m <span className='text-[#915EFF]'>Mark</span>
+            Welcome to <span className='text-[#0066cc]'>TechVision S&S</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop graphic visuals, user <br className='hidden sm:block' />
-            interfaces, and web applications
+            Pioneering digital solutions through <br className='hidden sm:block' />
+            innovation, creation, and education
           </p>
         </div>
       </div>
