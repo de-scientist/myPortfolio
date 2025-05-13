@@ -27,7 +27,24 @@
         "roughness",
         "uniforms",
         "vertexShader",
-        "fragmentShader"
+        "fragmentShader",
+        "polygonOffset",
+        "polygonOffsetFactor",
+        "flatShading",
+        "sizeAttenuation",
+        "roughnessMap",
+        "metalnessMap",
+        "emissiveMap",
+        "emissive",
+        "emissiveIntensity",
+        "polygonOffset",
+        "polygonOffsetFactor",
+        "flatShading",
+        "sizeAttenuation",
+        "roughnessMap",
+        "metalnessMap",
+        "metalness",
+        "roughness"
       ]
     }]
   },

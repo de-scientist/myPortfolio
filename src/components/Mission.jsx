@@ -3,7 +3,7 @@ import { styles } from '../styles';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
-const Mission = () => {
+const MissionComponent = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -63,4 +63,5 @@ const Mission = () => {
   );
 };
 
-export default SectionWrapper(Mission, 'mission');
+const WrappedMission = SectionWrapper(MissionComponent, 'mission');
+export default WrappedMission;

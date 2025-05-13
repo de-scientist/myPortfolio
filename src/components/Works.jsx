@@ -19,7 +19,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[15px] sm:text-[17px] max-w-3xl leading-[26px] sm:leading-[30px]'
         >
-          Following projects showcase our team's skills and experience through
+          Following projects showcase our team&apos;s skills and experience through
           real-world examples of our work. Each project is briefly described with
           links to code repositories and live demos in it. It reflects our
           ability to solve complex problems, work with different technologies,
