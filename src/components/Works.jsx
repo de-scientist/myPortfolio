@@ -17,7 +17,7 @@ const Works = () => {
       <div className='flex w-full'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary text-[15px] sm:text-[17px] max-w-3xl leading-[26px] sm:leading-[30px]'
         >
           Following projects showcase our team's skills and experience through
           real-world examples of our work. Each project is briefly described with
@@ -27,7 +27,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='flex flex-wrap gap-7 mt-20'>
+      <div className='flex flex-wrap gap-4 mt-16 sm:gap-7 sm:mt-20'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

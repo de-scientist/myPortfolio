@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import HeroElements from "./canvas/HeroElements";
 
 const Hero = () => {
   return (
-    <section className={`relative mx-auto w-full h-screen`}>
+    <section className={`relative mx-auto w-full h-screen bg-no-repeat bg-cover bg-hero-pattern`}>
+      <HeroElements />
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 z-10`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#0066cc]' />
@@ -24,8 +24,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
-      <ComputersCanvas />
 
       <div className='flex absolute bottom-32 justify-center items-center w-full xs:bottom-10'>
         <a href='#about'>

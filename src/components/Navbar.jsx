@@ -10,6 +10,28 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // Handle scroll position for active section
+  useEffect(() => {
+    const handleActiveSection = () => {
+      const sections = navLinks.map(link => document.getElementById(link.id));
+      const scrollPosition = window.scrollY + 100;
+
+      sections.forEach((section, index) => {
+        if (!section) return;
+        
+        if (
+          section.offsetTop <= scrollPosition &&
+          section.offsetTop + section.offsetHeight > scrollPosition
+        ) {
+          setActive(navLinks[index].title);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleActiveSection);
+    return () => window.removeEventListener('scroll', handleActiveSection);
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -96,7 +118,7 @@ const Navbar = () => {
           {/* Mobile Menu */}
           <div
             className={`${
-              !toggle ? "translate-x-full" : "translate-x-0"
+              !toggle ? "opacity-0 translate-x-full" : "opacity-100 translate-x-0"
             } fixed top-0 right-0 p-6 w-[min(75vw,300px)] h-screen transition-all duration-300 ease-in-out bg-primary/95 backdrop-blur-md shadow-xl z-20`}
           >
             <div className="flex flex-col h-full">
@@ -115,7 +137,7 @@ const Navbar = () => {
               </div>
               
               <ul className='flex flex-col gap-6 items-start list-none'>
-                {navLinks.map((nav) => (
+                {navLinks.filter(nav => nav.id !== 'footer').map((nav) => (
                   <li
                     key={nav.id}
                     className="w-full"
