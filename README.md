@@ -2,16 +2,16 @@
 
 <div align="center">
 
-![Portfolio Banner](./public/banner.png)
+# 👋 Welcome to My Digital Portfolio
 
 ### Full-Stack Developer • UI/UX Designer • AI Engineer • IT Consultant • Creative Technologist
 
-*"Building intelligent solutions that solve real-world problems and create meaningful digital experiences."*
+*"Building intelligent solutions that solve real-world problems and creating meaningful digital experiences."*
 
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge\&logo=react\&logoColor=white)](https://react.dev/)
-[![Next.js](https://img.shields.io/badge/Next.js-Latest-black?style=for-the-badge\&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)](https://www.typescriptlang.org/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38BDF8?style=for-the-badge\&logo=tailwindcss\&logoColor=white)](https://tailwindcss.com/)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge\&logo=react\&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript\&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38BDF8?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
 
 </div>
 
@@ -19,65 +19,41 @@
 
 # 🌟 Overview
 
-Welcome to my personal portfolio website.
+This repository contains the source code for my personal portfolio website, designed to showcase my work, experience, technical skills, and creative journey.
 
-This project showcases my work, experience, technical expertise, creative journey, and the innovative solutions I build across software engineering, artificial intelligence, product design, and digital experiences.
-
-The website is designed with performance, accessibility, responsiveness, and modern aesthetics at its core.
+The website emphasizes modern UI/UX principles, smooth animations, responsive layouts, and high performance to deliver an engaging user experience across all devices.
 
 ---
 
 # ✨ Features
 
-* 🎨 Premium Modern UI/UX
-* 🌙 Dark Mode Experience
+* 🎨 Premium Modern UI
 * 📱 Fully Responsive Design
 * ⚡ Lightning Fast Performance
 * 🎬 Smooth Animations
-* 🧩 Interactive Components
-* 📂 Dynamic Project Showcase
-* 📊 Skills & Technology Dashboard
-* 💼 Professional Experience Timeline
+* 🧩 Reusable Component Architecture
+* 💼 Professional Project Showcase
+* 📊 Skills & Technology Display
+* 📄 Experience Timeline
 * 📝 Blog & Articles Section
-* 📬 Contact Form Integration
-* 🚀 SEO Optimized
+* 📬 Contact Section
+* 🔍 SEO Friendly
+* ♿ Accessibility Focused
 
 ---
 
-# 🛠 Technology Stack
+# 🛠 Frontend Tech Stack
 
-## Frontend
-
-* React
-* Next.js
-* TypeScript
-* Tailwind CSS
-* Framer Motion
-
-## Backend
-
-* Node.js
-* Fastify / Express
-* REST APIs
-
-## Database
-
-* PostgreSQL
-* MongoDB
-* Firebase
-
-## AI & Machine Learning
-
-* Python
-* TensorFlow
-* PyTorch
-
-## DevOps & Deployment
-
-* Docker
-* GitHub Actions
-* Vercel
-* Netlify
+| Technology        | Purpose                        |
+| ----------------- | ------------------------------ |
+| React             | Component-based UI Development |
+| Vite              | Fast Development & Build Tool  |
+| TypeScript        | Type Safety                    |
+| Tailwind CSS      | Utility-First Styling          |
+| Framer Motion     | Animations                     |
+| HTML5             | Semantic Structure             |
+| CSS3              | Responsive Styling             |
+| JavaScript (ES6+) | Interactive Functionality      |
 
 ---
 
@@ -95,9 +71,9 @@ portfolio/
 │   ├── pages/
 │   ├── sections/
 │   ├── hooks/
-│   ├── services/
 │   ├── utils/
-│   └── styles/
+│   ├── styles/
+│   └── App.tsx
 │
 ├── package.json
 ├── vite.config.ts
@@ -133,7 +109,7 @@ npm install
 npm run dev
 ```
 
-Visit:
+The application will be available at:
 
 ```text
 http://localhost:5173
@@ -147,7 +123,7 @@ http://localhost:5173
 npm run build
 ```
 
-Preview the production build:
+Preview the production build locally:
 
 ```bash
 npm run preview
@@ -157,103 +133,91 @@ npm run preview
 
 # 🎯 Website Sections
 
-* Hero
-* About Me
-* Experience
-* Skills
-* Technology Stack
-* Featured Projects
-* Services
-* Testimonials
-* Blog
-* Contact
-* Footer
+* 🏠 Hero
+* 👨‍💻 About
+* 💼 Experience
+* 🚀 Projects
+* 🛠 Skills
+* 🎨 Tech Stack
+* 📜 Services
+* 💬 Testimonials
+* 📝 Blog
+* 📬 Contact
+* 🔗 Footer
 
 ---
 
 # 💼 Featured Projects
 
-## 🎓 Edu_AI
+### 🎓 Edu_AI
 
-An AI-powered education platform providing:
+An AI-powered education platform focused on personalized learning experiences and intelligent educational solutions.
 
-* Personalized learning paths
-* Student performance prediction
-* AI tutoring
-* Learning analytics
+### 🤟 Smart Glove
 
----
+A wearable technology project that translates sign language into audible speech using intelligent sensors.
 
-## 🤟 Smart Glove
+### ⛪ AI Digital Discipline Platform
 
-A wearable AI solution that translates sign language into audible speech using intelligent sensors and mobile integration.
+An AI-powered productivity concept promoting focused digital engagement through intelligent user experiences.
 
 ---
 
-## ⛪ AI Digital Discipline Platform
+# 🎨 Design Principles
 
-An intelligent productivity platform leveraging AI and geofencing to encourage focus and mindful technology use.
-
----
-
-# 🎨 Design Philosophy
-
-> Simplicity creates clarity.
-
-Every interaction should feel natural.
-
-Every animation should have purpose.
-
-Every pixel should communicate value.
+* Minimal & Modern
+* Clean Typography
+* Accessibility First
+* Mobile First
+* Performance Optimized
+* Reusable Components
+* Smooth User Experience
 
 ---
 
 # 📈 Performance Goals
 
 * ⚡ Lighthouse Score: 95+
-* ♿ Accessibility: WCAG Friendly
-* 📱 Mobile First
-* 🔍 SEO Optimized
-* 🚀 Fast Loading Experience
+* 📱 Fully Responsive
+* ♿ Accessibility Optimized
+* 🔍 SEO Friendly
+* 🚀 Optimized Asset Loading
 
 ---
 
-# 🌍 Future Roadmap
+# 🌍 Future Enhancements
 
-* AI Chat Assistant
-* Interactive 3D Experiences
-* CMS Integration
-* Project Filtering
-* Dark/Light Theme Toggle
-* Analytics Dashboard
-* Multi-language Support
-* Downloadable Resume
-* Case Study Pages
+* 🌙 Dark / Light Theme Toggle
+* 🌐 Multi-language Support
+* 🎥 Interactive Project Previews
+* 📄 Downloadable Resume
+* ✨ Advanced Motion Effects
+* 📊 Dynamic GitHub Statistics
+* 🤖 AI Portfolio Assistant
 
 ---
 
 # 🤝 Contributing
 
-Contributions, ideas, and suggestions are welcome.
+Contributions, ideas, and suggestions are always welcome.
 
 1. Fork the repository
-
 2. Create a feature branch
 
 ```bash
-git checkout -b feature/amazing-feature
+git checkout -b feature/new-feature
 ```
 
 3. Commit your changes
 
 ```bash
-git commit -m "Add amazing feature"
+git commit -m "Add new feature"
 ```
 
-4. Push to your branch
+4. Push your branch
 
 ```bash
-git push origin feature/amazing-feature
+git push origin feature/new-feature
 ```
 
 5. Open a Pull Request
@@ -264,15 +228,11 @@ git push origin feature/amazing-feature
 
 ## Mark Kinyanjui (De-scientist)
 
-**Full-Stack Developer | UI/UX Designer | AI Engineer | IT Consultant**
+**Full-Stack Developer • UI/UX Designer • AI Engineer • IT Consultant**
 
-📧 Email
+📧 **Email:** [gitaumark502@gmail.com](mailto:gitaumark502@gmail.com)
 
-[gitaumark502@gmail.com](mailto:gitaumark502@gmail.com)
-
-💼 LinkedIn
-
-https://www.linkedin.com/in/gitau-mark-433009262/
+💼 **LinkedIn:** https://www.linkedin.com/in/gitau-mark-433009262/
 
 ---
 
@@ -280,16 +240,14 @@ https://www.linkedin.com/in/gitau-mark-433009262/
 
 This project is licensed under the MIT License.
 
-Feel free to use it as inspiration while giving appropriate credit.
-
 ---
 
 <div align="center">
 
-## ⭐ Thank You for Visiting
+### ⭐ Thank you for visiting my portfolio!
 
-*"Code with purpose. Design with empathy. Build for impact."*
+*"Turning ideas into experiences, and experiences into impact."*
 
-**Made with ❤️ by Mark Kinyanjui (De-scientist)**
+**Made with React, Vite, TypeScript & Tailwind CSS**
 
 </div>
