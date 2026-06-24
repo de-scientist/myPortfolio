@@ -1,11 +1,29 @@
 import { motion } from "framer-motion";
+import { useEffect, useState, Suspense, lazy } from "react";
 import { styles } from "../styles";
-import HeroElements from "./canvas/HeroElements";
+const HeroElements = lazy(() => import("./canvas/HeroElements"));
+import herobg from "../assets/herobg.png";
 
 const Hero = () => {
+  const [showCanvas, setShowCanvas] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 640px)');
+    const handle = () => setShowCanvas(mq.matches);
+    handle();
+    mq.addEventListener?.('change', handle);
+    return () => mq.removeEventListener?.('change', handle);
+  }, []);
+
   return (
     <section className={`relative mx-auto w-full h-screen bg-no-repeat bg-cover bg-hero-pattern`}>
-      <HeroElements />
+      {showCanvas ? (
+        <Suspense fallback={null}>
+          <HeroElements />
+        </Suspense>
+      ) : (
+        <img src={herobg} alt="hero background" className="absolute inset-0 w-full h-full object-cover z-0" />
+      )}
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 z-10`}
       >
